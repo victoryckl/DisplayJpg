@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayJpg" >
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="play/pause"/>
+        <EditText 
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="IP:PORT/PATH/"
+            android:text="http://192.168.1.104:8989/sdcard/image/"/>
+        <TextView
+	        android:id="@+id/index"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="0.jpg" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/audio_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="audio play/pause"/>
+        <EditText 
+            android:id="@+id/audio_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="IP:PORT/PATH/FILE"
+            android:text="http://192.168.1.104:8989/sdcard/a.pcm"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  up  "/>
+        <TextView
+	        android:id="@+id/speed"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="10fps" />
+        <Button
+            android:id="@+id/down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" down "/>
+    </LinearLayout>
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
